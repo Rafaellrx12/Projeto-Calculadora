@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(9, 78, 94);
+  --primary-color-darker: rgb(0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  font-family: "Open sans", sans-serif;
+
+  width: 100%;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+body.dark {
+  margin: 0;
+  padding: 0;
+  background: rgb(61, 61, 61);
+  font-family: "Open sans", sans-serif;
+
+  width: 100%;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+
+  margin: 50px auto;
+  background: rgb(207, 133, 133);
+  padding: 20px;
+  background-color: rgb(161, 135, 135);
+  border-radius: 10px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+form button:hover,
+.botao-apagar:hover {
+  background-color: rgb(18, 98, 116);
+}
+form button:active,
+.botao-apagar:active {
+  background-color: rgb(9, 71, 85);
+}
+li {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding-block: 6px;
+}
+
+.botao-apagar {
+  background: rgb(9, 78, 94);
+  color: rgb(250, 246, 246);
+  border: none;
+  text-transform: capitalize;
+  padding-inline: 0.4rem;
+  height: 2rem;
+  width: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 300;
+}
+h1 {
+  text-align: center;
+}
+.calculadora {
+  width: 400px;
+}
+.display {
+  font-size: 2em;
+  width: 100%;
+  text-align: right;
+}
+.btn {
+  height: 40px;
+  width: 100%;
+  font-size: 1em;
+  border: none;
+  background: #dfdfdf;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #a3a3a3;
+}
+.btn-tema {
+  background-color: rgb(61, 57, 57);
+  color: #f8f8f8;
+}
+
+.dark .btn-tema {
+  background-color: #ffffff;
+  color: #423c3c;
+}
